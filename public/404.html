@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página não encontrada - Do Valle Engenharia</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/png" href="/assets/favicon.png" />
+  <link rel="preload" href="/assets/fonts/big-shoulders-display.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/archivo.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="/assets/css/custom.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#6EC1E4',
+            'primary-dark': '#263A99',
+            navy: '#0E1947',
+            surface: '#263A99',
+            cream: '#F0EBE5',
+          },
+          fontFamily: {
+            heading: ['Big Shoulders Display', 'sans-serif'],
+            body: ['Archivo', 'sans-serif'],
+          },
+          maxWidth: { site: '1300px' },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="flex min-h-screen flex-col items-center justify-center bg-navy px-6 text-center text-white font-body">
+  <img src="/assets/logo-white.webp" alt="Do Valle Engenharia" class="mb-10 h-12 w-auto" />
+  <p class="mb-2 font-heading text-8xl font-extrabold text-primary">404</p>
+  <h1 class="mb-4 font-heading text-2xl font-bold md:text-3xl">Página não encontrada</h1>
+  <p class="mb-8 max-w-md text-white/70">O endereço que você tentou acessar não existe ou foi movido.</p>
+  <a href="/" class="group inline-flex items-center gap-2 bg-primary-dark px-6 py-3 font-heading font-bold text-white transition-all duration-300 hover:bg-primary hover:text-navy">Voltar pro início <i class="fas fa-arrow-right transition-transform group-hover:translate-x-2"></i></a>
+</body>
+</html>
