@@ -62,13 +62,17 @@ python3 -m http.server 8080
 - **Big Shoulders Display** — títulos
 - **Archivo** — corpo
 
-## Deploy (Cloudflare Pages)
+## Deploy (Cloudflare Workers — static assets)
+
+Push em `main` dispara deploy automático (Workers Builds, roda `npx wrangler deploy`). Manual:
 
 ```bash
-npx wrangler pages deploy public --project-name=dovalleengenharia --branch=main
+npx wrangler deploy
 ```
 
-Projeto: **dovalleengenharia** (conta CONCEITO PRIME) — https://dovalleengenharia.pages.dev
+Worker: **engdv** (conta CONCEITO PRIME) — https://engdv.conceito-prime.workers.dev
+
+`wrangler.jsonc` aponta `assets.directory` pra `public/` (sem entry-point de Worker — só assets estáticos).
 
 ## Formulário de contato / Webhook
 
