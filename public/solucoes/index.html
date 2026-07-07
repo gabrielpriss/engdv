@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soluções - Do Valle Engenharia</title>
+  <meta name="description" content="Engenharia técnica, fabricação e montagem de estruturas metálicas industriais. Soluções completas para saneamento, papel e celulose, energia e fertilizantes." />
+  <link rel="icon" type="image/png" href="/assets/favicon.png" />
+  <link rel="preload" href="/assets/fonts/big-shoulders-display.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/archivo.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="/assets/css/custom.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#6EC1E4',
+            'primary-dark': '#263A99',
+            'primary-hover': '#97B4DE',
+            navy: '#0E1947',
+            surface: '#263A99',
+            cream: '#F0EBE5',
+          },
+          fontFamily: {
+            heading: ['Big Shoulders Display', 'sans-serif'],
+            body: ['Archivo', 'sans-serif'],
+          },
+          maxWidth: { site: '1300px' },
+          boxShadow: {
+            glow: '0 0 32px rgba(110, 193, 228, 0.25)',
+            card: '0 1px 2px rgba(14,25,71,0.04), 0 8px 24px rgba(14,25,71,0.06)',
+            'card-hover': '0 4px 12px rgba(14,25,71,0.08), 0 20px 48px rgba(14,25,71,0.14)',
+          },
+          animation: { 'pulse-soft': 'pulse-soft 2s ease-in-out infinite' },
+          keyframes: {
+            'pulse-soft': {
+              '0%, 100%': { transform: 'scale(1)', boxShadow: '0 0 0 0 rgba(110, 193, 228, 0.4)' },
+              '50%': { transform: 'scale(1.03)', boxShadow: '0 0 0 8px rgba(110, 193, 228, 0)' },
+            },
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="flex min-h-screen flex-col font-body bg-cream text-navy antialiased dark:bg-navy dark:text-white">
+
+  <!-- Overlay mobile -->
+  <div id="overlay" class="fixed inset-0 z-40 hidden bg-black/50 opacity-0 transition-opacity duration-300"></div>
+
+  <!-- Drawer mobile -->
+  <aside id="mobile-menu" class="fixed inset-y-0 right-0 z-50 w-72 transform translate-x-full bg-cream shadow-2xl transition-transform duration-300 ease-in-out dark:bg-navy">
+    <div class="mt-20 flex flex-col gap-6 p-8">
+      <a href="/" class="mobile-link text-xl font-heading font-medium hover:text-primary transition">Home</a>
+      <a href="/sobre-nos/" class="mobile-link text-xl font-heading font-medium hover:text-primary transition">Sobre Nós</a>
+      <a href="/solucoes/" class="mobile-link text-xl font-heading font-semibold text-primary">Soluções</a>
+      <a href="/projetos/" class="mobile-link text-xl font-heading font-medium hover:text-primary transition">Projetos</a>
+      <a href="/contato/" class="mobile-link text-xl font-heading font-medium hover:text-primary transition">Contato</a>
+      <a href="https://wa.me/5541999974479?text=Ol%C3%A1%2C%20vim%20pelo%20site%20Do%20Valle%20Engenharia%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" class="mobile-link mt-4 flex items-center gap-2 bg-primary-dark px-5 py-3 text-sm font-semibold text-white transition hover:bg-primary hover:text-navy">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+    </div>
+  </aside>
+
+  <header id="site-header" class="fixed top-0 left-0 right-0 z-50 w-full border-b border-transparent bg-transparent transition-all duration-300">
+    <div class="mx-auto flex h-20 max-w-site items-center justify-between px-6">
+      <a href="/" class="flex items-center">
+        <img src="/assets/logo-white.webp" alt="Do Valle Engenharia" id="logo-light" class="h-11 w-auto md:h-12" width="160" height="48" />
+        <img src="/assets/logo-navy.webp" alt="Do Valle Engenharia" id="logo-dark" class="hidden h-11 w-auto md:h-12" width="160" height="48" />
+      </a>
+
+      <nav class="hidden items-center gap-8 text-sm font-medium lg:flex" aria-label="Menu principal">
+        <a href="/" class="header-nav-link relative text-white transition hover:text-primary after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Home</a>
+        <a href="/sobre-nos/" class="header-nav-link relative text-white transition hover:text-primary after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Sobre Nós</a>
+        <a href="/solucoes/" class="header-nav-link nav-active relative text-white after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:bg-primary">Soluções</a>
+        <a href="/projetos/" class="header-nav-link relative text-white transition hover:text-primary after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Projetos</a>
+        <a href="/contato/" class="header-nav-link relative text-white transition hover:text-primary after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Contato</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button type="button" onclick="toggleTheme()" aria-label="Alternar tema" class="header-icon-btn flex h-10 w-10 text-white items-center justify-center transition hover:text-primary">
+          <i id="icon-sun" class="hidden fas fa-sun text-base"></i>
+          <i id="icon-moon" class="fas fa-moon text-base"></i>
+        </button>
+        <a href="https://wa.me/5541999974479?text=Ol%C3%A1%2C%20vim%20pelo%20site%20Do%20Valle%20Engenharia%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" class="header-wa-btn hidden items-center gap-2 border border-white/40 py-1.5 text-white pl-2 pr-4 transition hover:border-primary/50 sm:flex">
+          <span class="flex h-9 w-9 items-center justify-center bg-primary"><i class="fab fa-whatsapp text-sm text-navy"></i></span>
+          <span class="text-sm font-semibold">(41) 99997-4479</span>
+        </a>
+        <button id="menu-toggle" type="button" class="flex h-10 w-10 items-center justify-center text-white lg:hidden" aria-label="Abrir menu">
+          <i class="fas fa-bars text-lg"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-1">
+    <!-- Hero -->
+    <section class="relative flex min-h-[60vh] items-center overflow-hidden bg-gradient-to-br from-surface via-navy to-navy pt-20">
+      <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image:url('/assets/planta-industrial.webp')"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_70%_30%,rgba(110,193,228,0.15)_0%,transparent_60%),radial-gradient(ellipse_at_20%_80%,rgba(38,58,153,0.4)_0%,transparent_50%)]"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/70 to-transparent"></div>
+      <div class="relative z-10 mx-auto w-full max-w-site px-6 py-16 md:py-24">
+        <h1 class="mb-6 max-w-3xl font-heading text-4xl font-extrabold leading-tight tracking-tight text-white md:text-6xl" data-aos="fade-up">
+          Soluções completas em <span class="text-primary">engenharia industrial</span>
+        </h1>
+        <p class="mb-8 max-w-2xl text-lg leading-relaxed text-white/80" data-aos="fade-up" data-aos-delay="100">
+          Da concepção técnica à entrega em campo — projetamos, fabricamos e montamos estruturas metálicas com engenharia própria, controle de qualidade e atendimento consultivo em segmentos de alta exigência.
+        </p>
+        <a href="https://wa.me/5541999974479?text=Ol%C3%A1%2C%20vim%20pelo%20site%20Do%20Valle%20Engenharia%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" class="group inline-flex animate-pulse-soft items-center gap-3 bg-primary px-8 py-4 font-heading font-bold tracking-tight text-navy shadow-xl shadow-primary/50 ring-2 ring-primary/20 transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:shadow-primary/60" data-aos="fade-up" data-aos-delay="200">
+          Solicite uma proposta
+          <span class="transition-transform duration-300 group-hover:translate-x-2"><i class="fas fa-arrow-right"></i></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Engenharia Técnica -->
+    <section class="py-24 md:py-28">
+      <div class="mx-auto max-w-site px-6">
+        <div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+          <div data-aos="fade-right">
+            <p class="mb-3 flex items-center gap-2 text-sm font-semibold text-primary"><i class="fas fa-circle-dot text-xs"></i> Solução 01</p>
+            <h2 class="mb-6 font-heading text-3xl font-extrabold tracking-tight md:text-4xl">Engenharia <span class="text-primary">Técnica</span></h2>
+            <p class="mb-8 leading-relaxed text-primary-dark dark:text-white/70">Desenvolvimento de projetos estruturais metálicos com memorial de cálculo, análise de cargas, dimensionamento normativo e documentação técnica completa para aprovação e execução segura.</p>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <span class="flex h-6 w-6 shrink-0 items-center justify-center bg-primary/15 text-xs text-primary"><i class="fas fa-check"></i></span>
+                <span class="text-sm">Projeto estrutural e detalhamento de fabricação</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="flex h-6 w-6 shrink-0 items-center justify-center bg-primary/15 text-xs text-primary"><i class="fas fa-check"></i></span>
+                <span class="text-sm">Memorial de cálculo e laudos técnicos</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="flex h-6 w-6 shrink-0 items-center justify-center bg-primary/15 text-xs text-primary"><i class="fas fa-check"></i></span>
+                <span class="text-sm">Consultoria e visita técnica em planta industrial</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="flex h-6 w-6 shrink-0 items-center justify-center bg-primary/15 text-xs text-primary"><i class="fas fa-check"></i></span>
+                <span class="text-sm">Adequação às normas NR-12, NR-13 e ABNT</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="flex h-6 w-6 shrink-0 items-center justify-center bg-primary/15 text-xs text-primary"><i class="fas fa-check"></i></span>
+                <span class="text-sm">Reforço e adequação de estruturas existentes</span>
+              </li>
+            </ul>
+            <a href="https://wa.me/5541999974479?text=Ol%C3%A1%2C%20vim%20pelo%20site%20Do%20Valle%20Engenharia%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" class="group mt-8 inline-flex items-center gap-2 border-2 border-primary/50 px-6 py-3 font-heading font-bold transition-all duration-300 hover:border-primary hover:bg-primary hover:text-navy hover:shadow-lg hover:shadow-primary/40">Solicite um projeto estrutural <span class="transition-transform group-hover:translate-x-2"><i class="fas fa-arrow-right"></i></span></a>
+          </div>
+          <div class="overflow-hidden" data-aos="fade-left">
+            <img src="/assets/reforco-estrutural-ete.webp" alt="Engenharia técnica e projetos estruturais" class="h-80 w-full object-cover transition-transform duration-500 hover:scale-105 lg:h-96" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fabricação e Montagem -->
+    <section class="py-24 md:py-28">
+      <div class="mx-auto max-w-site px-6">
+        <div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+          <div class="order-2 overflow-hidden lg:order-1" data-aos="fade-right">
+            <img src="/assets/guindaste-giratorio.webp" alt="Fabricação e montagem de estruturas metálicas" class="h-80 w-full object-cover transition-transform duration-500 hover:scale-105 lg:h-96" />
+          </div>
+          <div class="order-1 lg:order-2" data-aos="fade-left">
+            <p class="mb-3 flex items-center gap-2 text-sm font-semibold text-primary"><i class="fas fa-circle-dot text-xs"></i> Solução 02</p>
+            <h2 class="mb-6 font-heading text-3xl font-extrabold tracking-tight md:text-4xl">Fabricação e <span class="text-primary">Montagem</span></h2>
+            <p class="mb-8 leading-relaxed text-primary-dark dark:text-white/70">Estrutura exclusiva de produção com capacidade de processamento mensal de até 10 toneladas, controle de qualidade em todas as etapas e equipe especializada em montagem em operação.</p>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <span class="flex h-6 w-6 shrink-0 items-center justify-center bg-primary/15 text-xs text-primary"><i class="fas fa-check"></i></span>
+                <span class="text-sm">Corte, dobra, solda e acabamento industrial</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="flex h-6 w-6 shrink-0 items-center justify-center bg-primary/15 text-xs text-primary"><i class="fas fa-check"></i></span>
+                <span class="text-sm">Fabricação de plataformas, escadas e guarda-corpos</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="flex h-6 w-6 shrink-0 items-center justify-center bg-primary/15 text-xs text-primary"><i class="fas fa-check"></i></span>
+                <span class="text-sm">Montagem em áreas energizadas e classificadas</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="flex h-6 w-6 shrink-0 items-center justify-center bg-primary/15 text-xs text-primary"><i class="fas fa-check"></i></span>
+                <span class="text-sm">Interface Aço Carbono / Aço Inox</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="flex h-6 w-6 shrink-0 items-center justify-center bg-primary/15 text-xs text-primary"><i class="fas fa-check"></i></span>
+                <span class="text-sm">Entrega ponta a ponta com prazos acordados</span>
+              </li>
+            </ul>
+            <a href="/contato/" class="group mt-8 inline-flex items-center gap-2 border-2 border-primary/50 px-6 py-3 font-heading font-bold transition-all duration-300 hover:border-primary hover:bg-primary hover:text-navy hover:shadow-lg hover:shadow-primary/40">Peça um orçamento de fabricação <span class="transition-transform group-hover:translate-x-2"><i class="fas fa-arrow-right"></i></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Segmentos Atendidos -->
+    <section class="py-24 md:py-28">
+      <div class="mx-auto max-w-site px-6">
+        <div class="section-light border border-primary/25 p-8 shadow-glow md:p-12">
+          <div class="mb-12 text-center" data-aos="fade-up">
+            <p class="mb-3 flex items-center justify-center gap-2 text-sm font-semibold text-primary"><i class="fas fa-circle-dot text-xs"></i> Solução 03</p>
+            <h2 class="font-heading text-3xl font-extrabold tracking-tight md:text-5xl">Segmentos <span class="text-primary">Atendidos</span></h2>
+            <p class="mx-auto mt-4 max-w-2xl text-primary-dark">Atuação consultiva e operacional em setores que exigem domínio técnico, segurança e conformidade normativa.</p>
+          </div>
+          <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div data-aos="fade-up">
+              <h3 class="mb-4 flex items-center gap-2 font-heading text-lg font-bold"><i class="fas fa-water text-primary"></i> Saneamento</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3 text-sm text-primary-dark"><span class="flex h-5 w-5 shrink-0 items-center justify-center bg-primary/15 text-[10px] text-primary"><i class="fas fa-check"></i></span>Reforço estrutural em ETEs e ETA</li>
+                <li class="flex items-start gap-3 text-sm text-primary-dark"><span class="flex h-5 w-5 shrink-0 items-center justify-center bg-primary/15 text-[10px] text-primary"><i class="fas fa-check"></i></span>Plataformas e passarelas sobre tanques</li>
+                <li class="flex items-start gap-3 text-sm text-primary-dark"><span class="flex h-5 w-5 shrink-0 items-center justify-center bg-primary/15 text-[10px] text-primary"><i class="fas fa-check"></i></span>Manutenção em operação ativa</li>
+              </ul>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="80">
+              <h3 class="mb-4 flex items-center gap-2 font-heading text-lg font-bold"><i class="fas fa-scroll text-primary"></i> Papel e Celulose</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3 text-sm text-primary-dark"><span class="flex h-5 w-5 shrink-0 items-center justify-center bg-primary/15 text-[10px] text-primary"><i class="fas fa-check"></i></span>Guindastes giratórios e plataformas</li>
+                <li class="flex items-start gap-3 text-sm text-primary-dark"><span class="flex h-5 w-5 shrink-0 items-center justify-center bg-primary/15 text-[10px] text-primary"><i class="fas fa-check"></i></span>Áreas classificadas e paradas programadas</li>
+                <li class="flex items-start gap-3 text-sm text-primary-dark"><span class="flex h-5 w-5 shrink-0 items-center justify-center bg-primary/15 text-[10px] text-primary"><i class="fas fa-check"></i></span>Interface metálica sobre equipamentos</li>
+              </ul>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="160">
+              <h3 class="mb-4 flex items-center gap-2 font-heading text-lg font-bold"><i class="fas fa-bolt text-primary"></i> Energia</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3 text-sm text-primary-dark"><span class="flex h-5 w-5 shrink-0 items-center justify-center bg-primary/15 text-[10px] text-primary"><i class="fas fa-check"></i></span>Plataformas em PCHs e usinas</li>
+                <li class="flex items-start gap-3 text-sm text-primary-dark"><span class="flex h-5 w-5 shrink-0 items-center justify-center bg-primary/15 text-[10px] text-primary"><i class="fas fa-check"></i></span>Escadas modulares em casa de força</li>
+                <li class="flex items-start gap-3 text-sm text-primary-dark"><span class="flex h-5 w-5 shrink-0 items-center justify-center bg-primary/15 text-[10px] text-primary"><i class="fas fa-check"></i></span>Instalação em área energizada</li>
+              </ul>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="240">
+              <h3 class="mb-4 flex items-center gap-2 font-heading text-lg font-bold"><i class="fas fa-seedling text-primary"></i> Fertilizantes e Industrial</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3 text-sm text-primary-dark"><span class="flex h-5 w-5 shrink-0 items-center justify-center bg-primary/15 text-[10px] text-primary"><i class="fas fa-check"></i></span>Estruturas para processos químicos</li>
+                <li class="flex items-start gap-3 text-sm text-primary-dark"><span class="flex h-5 w-5 shrink-0 items-center justify-center bg-primary/15 text-[10px] text-primary"><i class="fas fa-check"></i></span>Suportes e bases de equipamentos</li>
+                <li class="flex items-start gap-3 text-sm text-primary-dark"><span class="flex h-5 w-5 shrink-0 items-center justify-center bg-primary/15 text-[10px] text-primary"><i class="fas fa-check"></i></span>Projetos customizados sob demanda</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-12 text-center">
+            <a href="/contato/" class="group inline-flex items-center gap-2 border-2 border-primary/50 px-6 py-3 font-heading font-bold text-navy transition-all duration-300 hover:border-primary hover:bg-primary hover:shadow-lg hover:shadow-primary/40">Atuamos no seu segmento? Fale conosco <span class="transition-transform group-hover:translate-x-2"><i class="fas fa-arrow-right"></i></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="py-24 md:py-28">
+      <div class="mx-auto max-w-site px-6">
+        <div class="relative overflow-hidden border border-primary/25 bg-gradient-to-br from-surface via-navy to-navy p-10 text-center shadow-glow md:p-16" data-aos="fade-up">
+          <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(110,193,228,0.12)_0%,transparent_70%)]"></div>
+          <div class="relative z-10">
+            <h2 class="mb-4 font-heading text-3xl font-extrabold text-white md:text-4xl">Possui uma demanda desafiadora?</h2>
+            <p class="mx-auto mb-8 max-w-xl text-white/80">Nossa equipe técnica está pronta para analisar seu projeto, propor a melhor solução e entregar com segurança e agilidade.</p>
+            <a href="https://wa.me/5541999974479?text=Ol%C3%A1%2C%20vim%20pelo%20site%20Do%20Valle%20Engenharia%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" class="group inline-flex items-center gap-3 bg-primary-dark px-8 py-4 font-heading font-bold tracking-tight text-white shadow-xl shadow-black/30 ring-2 ring-primary/20 transition-all duration-300 hover:scale-110 hover:bg-primary hover:text-navy hover:shadow-2xl hover:shadow-primary/50">
+              Fale com um engenheiro
+              <span class="transition-transform duration-300 group-hover:translate-x-2"><i class="fas fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mx-4 mb-4 border border-b-0 border-primary/25 bg-surface px-8 pb-8 pt-16 text-white md:mx-6 md:px-16">
+    <div class="mx-auto grid max-w-site grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
+      <div>
+        <div class="mb-4 flex items-center gap-3">
+          <img src="/assets/logo-white.webp" alt="Do Valle Engenharia" class="h-9 w-auto" width="120" height="36" />
+        </div>
+        <p class="text-sm text-white/80">Engenharia industrial com performance, controle e autoridade técnica.</p>
+      </div>
+      <div>
+        <h6 class="mb-4 font-heading font-bold">Menu</h6>
+        <ul class="space-y-2 text-sm text-white/80">
+          <li><a href="/" class="transition hover:text-primary">Home</a></li>
+          <li><a href="/sobre-nos/" class="transition hover:text-primary">Sobre Nós</a></li>
+          <li><a href="/solucoes/" class="transition hover:text-primary">Soluções</a></li>
+          <li><a href="/projetos/" class="transition hover:text-primary">Projetos</a></li>
+          <li><a href="/contato/" class="transition hover:text-primary">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6 class="mb-4 font-heading font-bold">Contato</h6>
+        <ul class="space-y-3 text-sm text-white/80">
+          <li><p class="font-semibold text-white">Rodolfo Do Valle</p><p class="text-xs">Dep. Técnico Comercial</p><a href="https://wa.me/5541999974479" class="hover:text-primary">(41) 99997-4479</a></li>
+          <li><p class="font-semibold text-white">Patricia Franciele Enck</p><p class="text-xs">Dep. Técnico Engenharia</p><a href="https://wa.me/5549999031368" class="hover:text-primary">(49) 99903-1368</a></li>
+          <li><a href="mailto:rodolfo.valle@engdv.com" class="hover:text-primary">rodolfo.valle@engdv.com</a></li>
+          <li><a href="mailto:patricia.enck@engdv.com" class="hover:text-primary">patricia.enck@engdv.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6 class="mb-4 font-heading font-bold">Endereço</h6>
+        <p class="mb-4 text-sm text-white/80">Rua Antônio Cunha, nº 91 - Bairro Olaria | Lapa/PR</p>
+        <div class="flex gap-3">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="flex h-9 w-9 items-center justify-center border border-primary/30 bg-primary/15 text-primary transition hover:bg-primary/25"><i class="fab fa-instagram text-xs"></i></a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="flex h-9 w-9 items-center justify-center border border-primary/30 bg-primary/15 text-primary transition hover:bg-primary/25"><i class="fab fa-linkedin-in text-xs"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="mx-auto mt-10 h-px max-w-site bg-gradient-to-r from-transparent via-primary/40 to-transparent"></div>
+    <div class="mx-auto mt-6 flex max-w-site flex-col items-center justify-between gap-3 text-xs text-white/80 md:flex-row">
+      <p>&copy; Do Valle Engenharia 2025. Todos os direitos reservados.</p>
+      <p>Desenvolvido por <a href="https://conceitoprime.com.br" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Conceito Prime Marketing Digital</a></p>
+    </div>
+  </footer>
+
+  <!-- CTA mobile -->
+  <div class="fixed bottom-0 left-0 right-0 z-40 border-t border-primary/20 bg-cream/95 p-4 backdrop-blur-xl dark:bg-navy/95 lg:hidden">
+    <a href="https://wa.me/5541999974479?text=Ol%C3%A1%2C%20vim%20pelo%20site%20Do%20Valle%20Engenharia%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-3 bg-primary-dark py-4 text-sm font-heading font-bold tracking-tight text-white shadow-xl shadow-black/30 transition-all duration-300 hover:bg-primary hover:text-navy"><i class="fab fa-whatsapp text-lg"></i> Receba um projeto personalizado</a>
+  </div>
+
+  <!-- WhatsApp flutuante -->
+  <a href="https://wa.me/5541999974479?text=Ol%C3%A1%2C%20vim%20pelo%20site%20Do%20Valle%20Engenharia%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp" class="fixed bottom-6 right-6 z-40 hidden h-16 w-16 items-center justify-center bg-primary-dark text-white shadow-2xl shadow-black/40 ring-4 ring-primary/20 transition-all duration-300 hover:scale-110 hover:bg-primary hover:text-navy lg:flex">
+    <i class="fab fa-whatsapp text-3xl"></i>
+  </a>
+
+  <!-- LGPD -->
+  <div id="lgpd-popup" class="fixed bottom-4 left-4 z-50 max-w-xs translate-y-4 border border-primary/20 bg-white/90 p-4 opacity-0 shadow-2xl backdrop-blur-xl transition-all duration-500 dark:bg-navy/90">
+    <p class="text-xs leading-relaxed text-primary-dark dark:text-white/70">🍪 Usamos cookies para melhorar sua experiência. <a href="#" class="text-primary underline">Saiba mais</a></p>
+    <div class="mt-3 flex gap-2">
+      <button onclick="acceptLGPD()" class="flex-1 bg-primary-dark py-2 text-xs font-medium text-white transition hover:bg-primary hover:text-navy">Aceitar</button>
+      <button onclick="closeLGPD()" class="flex-1 border border-primary/30 py-2 text-xs transition hover:bg-primary/10">Fechar</button>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
