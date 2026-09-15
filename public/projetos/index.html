@@ -57,6 +57,7 @@
     <div class="mt-20 flex flex-col gap-6 p-8">
       <a href="/" class="mobile-link text-xl font-heading font-medium hover:text-primary transition">Home</a>
       <a href="/sobre-nos/" class="mobile-link text-xl font-heading font-medium hover:text-primary transition">Sobre Nós</a>
+      <a href="/qualidade/" class="mobile-link text-xl font-heading font-medium hover:text-primary transition">Qualidade</a>
       <a href="/solucoes/" class="mobile-link text-xl font-heading font-medium hover:text-primary transition">Soluções</a>
       <a href="/projetos/" class="mobile-link text-xl font-heading font-semibold text-primary">Projetos</a>
       <a href="/contato/" class="mobile-link text-xl font-heading font-medium hover:text-primary transition">Contato</a>
@@ -76,6 +77,7 @@
       <nav class="hidden items-center gap-8 text-sm font-medium lg:flex" aria-label="Menu principal">
         <a href="/" class="header-nav-link relative text-white transition hover:text-primary after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Home</a>
         <a href="/sobre-nos/" class="header-nav-link relative text-white transition hover:text-primary after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Sobre Nós</a>
+        <a href="/qualidade/" class="header-nav-link relative text-white transition hover:text-primary after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Qualidade</a>
         <a href="/solucoes/" class="header-nav-link relative text-white transition hover:text-primary after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Soluções</a>
         <a href="/projetos/" class="header-nav-link nav-active relative text-white after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:bg-primary">Projetos</a>
         <a href="/contato/" class="header-nav-link relative text-white transition hover:text-primary after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Contato</a>
@@ -129,7 +131,7 @@
           <!-- Case 1 -->
           <article class="group overflow-hidden border border-primary/15 bg-white shadow-card transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-card-hover" data-aos="fade-up">
             <div class="relative overflow-hidden">
-              <img src="/assets/planta-industrial.webp" alt="Planta industrial" class="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <img src="/assets/escada-modular-pch.webp" alt="Plataformas e escada modular em PCH" class="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
               <div class="absolute bottom-4 left-4 flex flex-wrap gap-2">
                 <span class="bg-navy/80 px-3 py-1 text-xs font-semibold text-primary backdrop-blur-sm">Energia</span>
                 <span class="bg-navy/80 px-3 py-1 text-xs font-semibold text-primary backdrop-blur-sm">PCH</span>
@@ -145,7 +147,7 @@
           <!-- Case 2 -->
           <article class="group overflow-hidden border border-primary/15 bg-white shadow-card transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-card-hover" data-aos="fade-up" data-aos-delay="80">
             <div class="relative overflow-hidden">
-              <img src="/assets/reforco-estrutural-ete.webp" alt="Reforço estrutural em ETE" class="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <img src="/assets/planta-industrial.webp" alt="Reforço estrutural em ETE" class="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
               <div class="absolute bottom-4 left-4 flex flex-wrap gap-2">
                 <span class="bg-navy/80 px-3 py-1 text-xs font-semibold text-primary backdrop-blur-sm">Saneamento</span>
                 <span class="bg-navy/80 px-3 py-1 text-xs font-semibold text-primary backdrop-blur-sm">ETE</span>
@@ -176,6 +178,187 @@
         </div>
         <div class="mt-12 text-center" data-aos="fade-up">
           <a href="https://wa.me/5541999974479?text=Ol%C3%A1%2C%20vim%20pelo%20site%20Do%20Valle%20Engenharia%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" class="group inline-flex items-center gap-2 border-2 border-primary/50 px-6 py-3 font-heading font-bold text-navy transition-all duration-300 hover:border-primary hover:bg-primary hover:shadow-lg hover:shadow-primary/40">Quero um case assim para minha empresa <span class="transition-transform group-hover:translate-x-2"><i class="fas fa-arrow-right"></i></span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galeria -->
+    <section class="py-24 md:py-28">
+      <div class="mx-auto max-w-site px-6">
+        <div class="mb-12 text-center" data-aos="fade-up">
+          <p class="mb-3 flex items-center justify-center gap-2 text-sm font-semibold text-primary"><i class="fas fa-circle-dot text-xs"></i> Galeria</p>
+          <h2 class="text-fade font-heading text-3xl font-extrabold tracking-tight md:text-5xl">Conheça nossos projetos</h2>
+          <p class="mx-auto mt-4 max-w-2xl leading-relaxed text-primary-dark dark:text-white/70">Registros de fabricação, montagem e instalação executados pela nossa equipe. Clique em uma foto para ampliar.</p>
+        </div>
+
+        <div id="galeria" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <figure data-galeria-item data-full="/assets/galeria/profissionais-qualificacao.webp" data-caption="Profissionais com qualificação e treinamentos" data-aos="fade-up" data-aos-delay="0" class="group cursor-zoom-in overflow-hidden border border-primary/15 bg-white shadow-card transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-card-hover dark:border-primary/20 dark:bg-white/5">
+            <div class="relative overflow-hidden">
+              <img src="/assets/galeria/profissionais-qualificacao-thumb.webp" alt="Profissionais com qualificação e treinamentos" loading="lazy" decoding="async" width="480" height="640" class="h-60 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <span class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center bg-navy/70 text-primary opacity-0 backdrop-blur-sm transition duration-300 group-hover:opacity-100"><i class="fas fa-expand text-xs"></i></span>
+            </div>
+            <figcaption class="p-5 text-sm font-medium leading-relaxed text-primary-dark dark:text-white/75">Profissionais com qualificação e treinamentos</figcaption>
+          </figure>
+          <figure data-galeria-item data-full="/assets/galeria/atividades-fabricacao.webp" data-caption="Atividades de fabricação" data-aos="fade-up" data-aos-delay="80" class="group cursor-zoom-in overflow-hidden border border-primary/15 bg-white shadow-card transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-card-hover dark:border-primary/20 dark:bg-white/5">
+            <div class="relative overflow-hidden">
+              <img src="/assets/galeria/atividades-fabricacao-thumb.webp" alt="Atividades de fabricação" loading="lazy" decoding="async" width="480" height="640" class="h-60 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <span class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center bg-navy/70 text-primary opacity-0 backdrop-blur-sm transition duration-300 group-hover:opacity-100"><i class="fas fa-expand text-xs"></i></span>
+            </div>
+            <figcaption class="p-5 text-sm font-medium leading-relaxed text-primary-dark dark:text-white/75">Atividades de fabricação</figcaption>
+          </figure>
+          <figure data-galeria-item data-full="/assets/galeria/reservatorio-taca.webp" data-caption="Fabricação e instalação de reservatório tipo taça" data-aos="fade-up" data-aos-delay="160" class="group cursor-zoom-in overflow-hidden border border-primary/15 bg-white shadow-card transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-card-hover dark:border-primary/20 dark:bg-white/5">
+            <div class="relative overflow-hidden">
+              <img src="/assets/galeria/reservatorio-taca-thumb.webp" alt="Fabricação e instalação de reservatório tipo taça" loading="lazy" decoding="async" width="480" height="640" class="h-60 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <span class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center bg-navy/70 text-primary opacity-0 backdrop-blur-sm transition duration-300 group-hover:opacity-100"><i class="fas fa-expand text-xs"></i></span>
+            </div>
+            <figcaption class="p-5 text-sm font-medium leading-relaxed text-primary-dark dark:text-white/75">Fabricação e instalação de reservatório tipo taça</figcaption>
+          </figure>
+          <figure data-galeria-item data-full="/assets/galeria/reservatorio-taca-montagem.webp" data-caption="Fabricação e montagem de reservatório tipo taça" data-aos="fade-up" data-aos-delay="0" class="group cursor-zoom-in overflow-hidden border border-primary/15 bg-white shadow-card transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-card-hover dark:border-primary/20 dark:bg-white/5">
+            <div class="relative overflow-hidden">
+              <img src="/assets/galeria/reservatorio-taca-montagem-thumb.webp" alt="Fabricação e montagem de reservatório tipo taça" loading="lazy" decoding="async" width="480" height="640" class="h-60 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <span class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center bg-navy/70 text-primary opacity-0 backdrop-blur-sm transition duration-300 group-hover:opacity-100"><i class="fas fa-expand text-xs"></i></span>
+            </div>
+            <figcaption class="p-5 text-sm font-medium leading-relaxed text-primary-dark dark:text-white/75">Fabricação e montagem de reservatório tipo taça</figcaption>
+          </figure>
+          <figure data-galeria-item data-full="/assets/galeria/reservatorio-agua-taca.webp" data-caption="Fabricação e instalação de reservatório de água tipo taça" data-aos="fade-up" data-aos-delay="80" class="group cursor-zoom-in overflow-hidden border border-primary/15 bg-white shadow-card transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-card-hover dark:border-primary/20 dark:bg-white/5">
+            <div class="relative overflow-hidden">
+              <img src="/assets/galeria/reservatorio-agua-taca-thumb.webp" alt="Fabricação e instalação de reservatório de água tipo taça" loading="lazy" decoding="async" width="360" height="640" class="h-60 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <span class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center bg-navy/70 text-primary opacity-0 backdrop-blur-sm transition duration-300 group-hover:opacity-100"><i class="fas fa-expand text-xs"></i></span>
+            </div>
+            <figcaption class="p-5 text-sm font-medium leading-relaxed text-primary-dark dark:text-white/75">Fabricação e instalação de reservatório de água tipo taça</figcaption>
+          </figure>
+          <figure data-galeria-item data-full="/assets/galeria/tampas-grades.webp" data-caption="Projeto, fabricação e instalação de tampas e grades" data-aos="fade-up" data-aos-delay="160" class="group cursor-zoom-in overflow-hidden border border-primary/15 bg-white shadow-card transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-card-hover dark:border-primary/20 dark:bg-white/5">
+            <div class="relative overflow-hidden">
+              <img src="/assets/galeria/tampas-grades-thumb.webp" alt="Projeto, fabricação e instalação de tampas e grades" loading="lazy" decoding="async" width="613" height="640" class="h-60 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <span class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center bg-navy/70 text-primary opacity-0 backdrop-blur-sm transition duration-300 group-hover:opacity-100"><i class="fas fa-expand text-xs"></i></span>
+            </div>
+            <figcaption class="p-5 text-sm font-medium leading-relaxed text-primary-dark dark:text-white/75">Projeto, fabricação e instalação de tampas e grades</figcaption>
+          </figure>
+          <figure data-galeria-item data-full="/assets/galeria/escadas-acessos.webp" data-caption="Projeto, fabricação e instalação de escadas de acesso" data-aos="fade-up" data-aos-delay="0" class="group cursor-zoom-in overflow-hidden border border-primary/15 bg-white shadow-card transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-card-hover dark:border-primary/20 dark:bg-white/5">
+            <div class="relative overflow-hidden">
+              <img src="/assets/galeria/escadas-acessos-thumb.webp" alt="Projeto, fabricação e instalação de escadas de acesso" loading="lazy" decoding="async" width="360" height="640" class="h-60 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <span class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center bg-navy/70 text-primary opacity-0 backdrop-blur-sm transition duration-300 group-hover:opacity-100"><i class="fas fa-expand text-xs"></i></span>
+            </div>
+            <figcaption class="p-5 text-sm font-medium leading-relaxed text-primary-dark dark:text-white/75">Projeto, fabricação e instalação de escadas de acesso</figcaption>
+          </figure>
+          <figure data-galeria-item data-full="/assets/galeria/escadas-patamares.webp" data-caption="Fabricação e instalação de escadas e patamares de acesso" data-aos="fade-up" data-aos-delay="80" class="group cursor-zoom-in overflow-hidden border border-primary/15 bg-white shadow-card transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-card-hover dark:border-primary/20 dark:bg-white/5">
+            <div class="relative overflow-hidden">
+              <img src="/assets/galeria/escadas-patamares-thumb.webp" alt="Fabricação e instalação de escadas e patamares de acesso" loading="lazy" decoding="async" width="480" height="640" class="h-60 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <span class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center bg-navy/70 text-primary opacity-0 backdrop-blur-sm transition duration-300 group-hover:opacity-100"><i class="fas fa-expand text-xs"></i></span>
+            </div>
+            <figcaption class="p-5 text-sm font-medium leading-relaxed text-primary-dark dark:text-white/75">Fabricação e instalação de escadas e patamares de acesso</figcaption>
+          </figure>
+          <figure data-galeria-item data-full="/assets/galeria/guarda-corpo-escadas.webp" data-caption="Fabricação e instalação de guarda-corpo de escadas de acesso" data-aos="fade-up" data-aos-delay="160" class="group cursor-zoom-in overflow-hidden border border-primary/15 bg-white shadow-card transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-card-hover dark:border-primary/20 dark:bg-white/5">
+            <div class="relative overflow-hidden">
+              <img src="/assets/galeria/guarda-corpo-escadas-thumb.webp" alt="Fabricação e instalação de guarda-corpo de escadas de acesso" loading="lazy" decoding="async" width="480" height="640" class="h-60 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <span class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center bg-navy/70 text-primary opacity-0 backdrop-blur-sm transition duration-300 group-hover:opacity-100"><i class="fas fa-expand text-xs"></i></span>
+            </div>
+            <figcaption class="p-5 text-sm font-medium leading-relaxed text-primary-dark dark:text-white/75">Fabricação e instalação de guarda-corpo de escadas de acesso</figcaption>
+          </figure>
+          <figure data-galeria-item data-full="/assets/galeria/guarda-corpo.webp" data-caption="Fabricação e instalação de guarda-corpo" data-galeria-extra="" hidden class="group cursor-zoom-in overflow-hidden border border-primary/15 bg-white shadow-card transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-card-hover dark:border-primary/20 dark:bg-white/5">
+            <div class="relative overflow-hidden">
+              <img src="/assets/galeria/guarda-corpo-thumb.webp" alt="Fabricação e instalação de guarda-corpo" loading="lazy" decoding="async" width="480" height="640" class="h-60 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <span class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center bg-navy/70 text-primary opacity-0 backdrop-blur-sm transition duration-300 group-hover:opacity-100"><i class="fas fa-expand text-xs"></i></span>
+            </div>
+            <figcaption class="p-5 text-sm font-medium leading-relaxed text-primary-dark dark:text-white/75">Fabricação e instalação de guarda-corpo</figcaption>
+          </figure>
+          <figure data-galeria-item data-full="/assets/galeria/cacambas-brooks.webp" data-caption="Fabricação de caçambas tipo brooks" data-galeria-extra="" hidden class="group cursor-zoom-in overflow-hidden border border-primary/15 bg-white shadow-card transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-card-hover dark:border-primary/20 dark:bg-white/5">
+            <div class="relative overflow-hidden">
+              <img src="/assets/galeria/cacambas-brooks-thumb.webp" alt="Fabricação de caçambas tipo brooks" loading="lazy" decoding="async" width="480" height="640" class="h-60 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <span class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center bg-navy/70 text-primary opacity-0 backdrop-blur-sm transition duration-300 group-hover:opacity-100"><i class="fas fa-expand text-xs"></i></span>
+            </div>
+            <figcaption class="p-5 text-sm font-medium leading-relaxed text-primary-dark dark:text-white/75">Fabricação de caçambas tipo brooks</figcaption>
+          </figure>
+          <figure data-galeria-item data-full="/assets/galeria/inspecao-pintura-brooks.webp" data-caption="Inspeção de pintura em caçamba tipo brooks" data-galeria-extra="" hidden class="group cursor-zoom-in overflow-hidden border border-primary/15 bg-white shadow-card transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-card-hover dark:border-primary/20 dark:bg-white/5">
+            <div class="relative overflow-hidden">
+              <img src="/assets/galeria/inspecao-pintura-brooks-thumb.webp" alt="Inspeção de pintura em caçamba tipo brooks" loading="lazy" decoding="async" width="480" height="640" class="h-60 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <span class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center bg-navy/70 text-primary opacity-0 backdrop-blur-sm transition duration-300 group-hover:opacity-100"><i class="fas fa-expand text-xs"></i></span>
+            </div>
+            <figcaption class="p-5 text-sm font-medium leading-relaxed text-primary-dark dark:text-white/75">Inspeção de pintura em caçamba tipo brooks</figcaption>
+          </figure>
+          <figure data-galeria-item data-full="/assets/galeria/atividades-pintura.webp" data-caption="Atividades de pintura" data-galeria-extra="" hidden class="group cursor-zoom-in overflow-hidden border border-primary/15 bg-white shadow-card transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-card-hover dark:border-primary/20 dark:bg-white/5">
+            <div class="relative overflow-hidden">
+              <img src="/assets/galeria/atividades-pintura-thumb.webp" alt="Atividades de pintura" loading="lazy" decoding="async" width="360" height="640" class="h-60 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <span class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center bg-navy/70 text-primary opacity-0 backdrop-blur-sm transition duration-300 group-hover:opacity-100"><i class="fas fa-expand text-xs"></i></span>
+            </div>
+            <figcaption class="p-5 text-sm font-medium leading-relaxed text-primary-dark dark:text-white/75">Atividades de pintura</figcaption>
+          </figure>
+          <figure data-galeria-item data-full="/assets/galeria/vias-rodagem-placas.webp" data-caption="Fabricação e instalação de estrutura para vias de rodagem e estruturas de placas" data-galeria-extra="" hidden class="group cursor-zoom-in overflow-hidden border border-primary/15 bg-white shadow-card transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-card-hover dark:border-primary/20 dark:bg-white/5">
+            <div class="relative overflow-hidden">
+              <img src="/assets/galeria/vias-rodagem-placas-thumb.webp" alt="Fabricação e instalação de estrutura para vias de rodagem e estruturas de placas" loading="lazy" decoding="async" width="640" height="480" class="h-60 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <span class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center bg-navy/70 text-primary opacity-0 backdrop-blur-sm transition duration-300 group-hover:opacity-100"><i class="fas fa-expand text-xs"></i></span>
+            </div>
+            <figcaption class="p-5 text-sm font-medium leading-relaxed text-primary-dark dark:text-white/75">Fabricação e instalação de estrutura para vias de rodagem e estruturas de placas</figcaption>
+          </figure>
+          <figure data-galeria-item data-full="/assets/galeria/vias-rodagem.webp" data-caption="Fabricação e instalação de estrutura para vias de rodagem" data-galeria-extra="" hidden class="group cursor-zoom-in overflow-hidden border border-primary/15 bg-white shadow-card transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-card-hover dark:border-primary/20 dark:bg-white/5">
+            <div class="relative overflow-hidden">
+              <img src="/assets/galeria/vias-rodagem-thumb.webp" alt="Fabricação e instalação de estrutura para vias de rodagem" loading="lazy" decoding="async" width="640" height="480" class="h-60 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <span class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center bg-navy/70 text-primary opacity-0 backdrop-blur-sm transition duration-300 group-hover:opacity-100"><i class="fas fa-expand text-xs"></i></span>
+            </div>
+            <figcaption class="p-5 text-sm font-medium leading-relaxed text-primary-dark dark:text-white/75">Fabricação e instalação de estrutura para vias de rodagem</figcaption>
+          </figure>
+          <figure data-galeria-item data-full="/assets/galeria/estruturas-industrias.webp" data-caption="Fabricação e instalação de estruturas para indústrias" data-galeria-extra="" hidden class="group cursor-zoom-in overflow-hidden border border-primary/15 bg-white shadow-card transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-card-hover dark:border-primary/20 dark:bg-white/5">
+            <div class="relative overflow-hidden">
+              <img src="/assets/galeria/estruturas-industrias-thumb.webp" alt="Fabricação e instalação de estruturas para indústrias" loading="lazy" decoding="async" width="479" height="640" class="h-60 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <span class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center bg-navy/70 text-primary opacity-0 backdrop-blur-sm transition duration-300 group-hover:opacity-100"><i class="fas fa-expand text-xs"></i></span>
+            </div>
+            <figcaption class="p-5 text-sm font-medium leading-relaxed text-primary-dark dark:text-white/75">Fabricação e instalação de estruturas para indústrias</figcaption>
+          </figure>
+          <figure data-galeria-item data-full="/assets/galeria/estrutura-fechamentos.webp" data-caption="Montagem de estrutura metálica com fechamentos" data-galeria-extra="" hidden class="group cursor-zoom-in overflow-hidden border border-primary/15 bg-white shadow-card transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-card-hover dark:border-primary/20 dark:bg-white/5">
+            <div class="relative overflow-hidden">
+              <img src="/assets/galeria/estrutura-fechamentos-thumb.webp" alt="Montagem de estrutura metálica com fechamentos" loading="lazy" decoding="async" width="640" height="480" class="h-60 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <span class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center bg-navy/70 text-primary opacity-0 backdrop-blur-sm transition duration-300 group-hover:opacity-100"><i class="fas fa-expand text-xs"></i></span>
+            </div>
+            <figcaption class="p-5 text-sm font-medium leading-relaxed text-primary-dark dark:text-white/75">Montagem de estrutura metálica com fechamentos</figcaption>
+          </figure>
+          <figure data-galeria-item data-full="/assets/galeria/montagem-equipamento.webp" data-caption="Montagem de equipamento" data-galeria-extra="" hidden class="group cursor-zoom-in overflow-hidden border border-primary/15 bg-white shadow-card transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-card-hover dark:border-primary/20 dark:bg-white/5">
+            <div class="relative overflow-hidden">
+              <img src="/assets/galeria/montagem-equipamento-thumb.webp" alt="Montagem de equipamento" loading="lazy" decoding="async" width="640" height="480" class="h-60 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <span class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center bg-navy/70 text-primary opacity-0 backdrop-blur-sm transition duration-300 group-hover:opacity-100"><i class="fas fa-expand text-xs"></i></span>
+            </div>
+            <figcaption class="p-5 text-sm font-medium leading-relaxed text-primary-dark dark:text-white/75">Montagem de equipamento</figcaption>
+          </figure>
+          <figure data-galeria-item data-full="/assets/galeria/cobertura-metalica-01.webp" data-caption="Montagem de cobertura metálica" data-galeria-extra="" hidden class="group cursor-zoom-in overflow-hidden border border-primary/15 bg-white shadow-card transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-card-hover dark:border-primary/20 dark:bg-white/5">
+            <div class="relative overflow-hidden">
+              <img src="/assets/galeria/cobertura-metalica-01-thumb.webp" alt="Montagem de cobertura metálica" loading="lazy" decoding="async" width="640" height="480" class="h-60 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <span class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center bg-navy/70 text-primary opacity-0 backdrop-blur-sm transition duration-300 group-hover:opacity-100"><i class="fas fa-expand text-xs"></i></span>
+            </div>
+            <figcaption class="p-5 text-sm font-medium leading-relaxed text-primary-dark dark:text-white/75">Montagem de cobertura metálica</figcaption>
+          </figure>
+          <figure data-galeria-item data-full="/assets/galeria/cobertura-metalica-02.webp" data-caption="Montagem de cobertura metálica" data-galeria-extra="" hidden class="group cursor-zoom-in overflow-hidden border border-primary/15 bg-white shadow-card transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-card-hover dark:border-primary/20 dark:bg-white/5">
+            <div class="relative overflow-hidden">
+              <img src="/assets/galeria/cobertura-metalica-02-thumb.webp" alt="Montagem de cobertura metálica" loading="lazy" decoding="async" width="640" height="480" class="h-60 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <span class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center bg-navy/70 text-primary opacity-0 backdrop-blur-sm transition duration-300 group-hover:opacity-100"><i class="fas fa-expand text-xs"></i></span>
+            </div>
+            <figcaption class="p-5 text-sm font-medium leading-relaxed text-primary-dark dark:text-white/75">Montagem de cobertura metálica</figcaption>
+          </figure>
+          <figure data-galeria-item data-full="/assets/galeria/cobertura-metalica-03.webp" data-caption="Montagem de cobertura metálica" data-galeria-extra="" hidden class="group cursor-zoom-in overflow-hidden border border-primary/15 bg-white shadow-card transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-card-hover dark:border-primary/20 dark:bg-white/5">
+            <div class="relative overflow-hidden">
+              <img src="/assets/galeria/cobertura-metalica-03-thumb.webp" alt="Montagem de cobertura metálica" loading="lazy" decoding="async" width="640" height="480" class="h-60 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <span class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center bg-navy/70 text-primary opacity-0 backdrop-blur-sm transition duration-300 group-hover:opacity-100"><i class="fas fa-expand text-xs"></i></span>
+            </div>
+            <figcaption class="p-5 text-sm font-medium leading-relaxed text-primary-dark dark:text-white/75">Montagem de cobertura metálica</figcaption>
+          </figure>
+          <figure data-galeria-item data-full="/assets/galeria/cobertura-metalica-04.webp" data-caption="Montagem de cobertura metálica" data-galeria-extra="" hidden class="group cursor-zoom-in overflow-hidden border border-primary/15 bg-white shadow-card transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-card-hover dark:border-primary/20 dark:bg-white/5">
+            <div class="relative overflow-hidden">
+              <img src="/assets/galeria/cobertura-metalica-04-thumb.webp" alt="Montagem de cobertura metálica" loading="lazy" decoding="async" width="640" height="620" class="h-60 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <span class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center bg-navy/70 text-primary opacity-0 backdrop-blur-sm transition duration-300 group-hover:opacity-100"><i class="fas fa-expand text-xs"></i></span>
+            </div>
+            <figcaption class="p-5 text-sm font-medium leading-relaxed text-primary-dark dark:text-white/75">Montagem de cobertura metálica</figcaption>
+          </figure>
+          <figure data-galeria-item data-full="/assets/galeria/cobertura-metalica-05.webp" data-caption="Montagem de cobertura metálica" data-galeria-extra="" hidden class="group cursor-zoom-in overflow-hidden border border-primary/15 bg-white shadow-card transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-card-hover dark:border-primary/20 dark:bg-white/5">
+            <div class="relative overflow-hidden">
+              <img src="/assets/galeria/cobertura-metalica-05-thumb.webp" alt="Montagem de cobertura metálica" loading="lazy" decoding="async" width="640" height="640" class="h-60 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <span class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center bg-navy/70 text-primary opacity-0 backdrop-blur-sm transition duration-300 group-hover:opacity-100"><i class="fas fa-expand text-xs"></i></span>
+            </div>
+            <figcaption class="p-5 text-sm font-medium leading-relaxed text-primary-dark dark:text-white/75">Montagem de cobertura metálica</figcaption>
+          </figure>
+        </div>
+
+        <div class="mt-10 text-center">
+          <button type="button" id="galeria-mais" class="group inline-flex items-center gap-2 border-2 border-primary/50 px-6 py-3 font-heading font-bold transition-all duration-300 hover:border-primary hover:bg-primary hover:text-navy hover:shadow-lg hover:shadow-primary/40">
+            Ver todas as fotos <span class="transition-transform group-hover:translate-y-1"><i class="fas fa-arrow-down"></i></span>
+          </button>
         </div>
       </div>
     </section>
@@ -218,6 +401,7 @@
         <ul class="space-y-2 text-sm text-white/80">
           <li><a href="/" class="transition hover:text-primary">Home</a></li>
           <li><a href="/sobre-nos/" class="transition hover:text-primary">Sobre Nós</a></li>
+          <li><a href="/qualidade/" class="transition hover:text-primary">Qualidade</a></li>
           <li><a href="/solucoes/" class="transition hover:text-primary">Soluções</a></li>
           <li><a href="/projetos/" class="transition hover:text-primary">Projetos</a></li>
           <li><a href="/contato/" class="transition hover:text-primary">Contato</a></li>
@@ -265,6 +449,17 @@
       <button onclick="acceptLGPD()" class="flex-1 bg-primary-dark py-2 text-xs font-medium text-white transition hover:bg-primary hover:text-navy">Aceitar</button>
       <button onclick="closeLGPD()" class="flex-1 border border-primary/30 py-2 text-xs transition hover:bg-primary/10">Fechar</button>
     </div>
+  </div>
+
+  <!-- Lightbox da galeria -->
+  <div id="lightbox" class="fixed inset-0 z-[60] hidden items-center justify-center bg-navy/95 p-4 backdrop-blur-sm" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+    <button type="button" id="lightbox-close" class="absolute right-5 top-5 flex h-11 w-11 items-center justify-center border border-white/25 text-white transition hover:border-primary hover:text-primary" aria-label="Fechar"><i class="fas fa-xmark text-lg"></i></button>
+    <button type="button" id="lightbox-prev" class="absolute left-4 flex h-11 w-11 items-center justify-center border border-white/25 text-white transition hover:border-primary hover:text-primary md:left-8" aria-label="Foto anterior"><i class="fas fa-chevron-left"></i></button>
+    <button type="button" id="lightbox-next" class="absolute right-4 flex h-11 w-11 items-center justify-center border border-white/25 text-white transition hover:border-primary hover:text-primary md:right-8" aria-label="Próxima foto"><i class="fas fa-chevron-right"></i></button>
+    <figure class="flex max-h-full w-full max-w-4xl flex-col items-center gap-4">
+      <img id="lightbox-img" src="" alt="" class="max-h-[72vh] w-auto max-w-full object-contain" />
+      <figcaption id="lightbox-caption" class="text-center font-heading text-lg font-bold text-white"></figcaption>
+    </figure>
   </div>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
